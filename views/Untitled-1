@@ -1,0 +1,22 @@
+<%= bus_details[i].timing.startTime %>
+<%=  bus_details[i].route.info.replace("TO","-->") %>
+
+<li class="active">
+                <% for(var i=0;i<= bus_count-1;i++){ %>
+                  <a style="font-size: 0.8em;word-spacing: 5px;"> <i class="fa fa-clock"></i> <%= bus_details[i].timing.startTime %></a>
+                  <a class="sidebar-anchor"  style="text-decoration: none;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 0.7em;word-spacing: 5px;font-size: 0.8em;" href="/profile/<%= bus_details[i].uId %>">&nbsp;&nbsp;&nbsp;<%=  bus_details[i].route.info.replace("TO","-->") %></a>
+                  
+                      <%  } %>
+                  <!-- <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Bus_1</a> -->
+                 
+              </li>
+
+<li class="active">
+                      <% for(var i=0;i<= bus_count-1;i++){ %>
+                        <span style="font-size: 0.8em;word-spacing: 5px;"> <i class="fa fa-clock"></i> <%= bus_details[i].timing.startTime %></span>
+                        <a class="sidebar-anchor"  style="text-decoration: none;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 0.7em;word-spacing: 5px;font-size: 0.8em;" href="/profile/<%= bus_details[i].uId %>">&nbsp;&nbsp;&nbsp;<%=  bus_details[i].route.info.replace("TO","-->") %></a>
+                        
+                            <%  } %>
+                        <!-- <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Bus_1</a> -->
+                       
+                    </li>

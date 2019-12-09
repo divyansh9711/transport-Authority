@@ -1,0 +1,83 @@
+{
+    "baseResponse": {
+      "message": "Location retrived succefully",
+      "statusCode": "200"
+    },
+    "vehicleList": [
+      {
+        "category": {
+          "categoryId": "4"
+        },
+        "uId": "1",
+        "driver": {
+          "info": "b",
+          "uId": "2",
+          "firstName": "Jayant",
+          "gender": {
+            "categoryId": "1"
+          },
+          "lastName": "Meena",
+          "userCategory": {
+            "categoryId": "1"
+          },
+          "userEmail": "16UCS152@LNMIIT.ac.in",
+          "userMobile": "9898989803"
+        },
+        "endLocation": {
+          "info": "a",
+          "title": "LNMIIT",
+          "uId": "1",
+          "country": "INDIA",
+          "latitude": "26.937899",
+          "locality": "MAIN GATE NO. 1",
+          "longitude": "75.922485",
+          "zipCode": "302031"
+        },
+        "route": {
+          "info": "RAJA PARK TO LNMIIT",
+          "title": "RP_LNM",
+          "uId": "8",
+          "endLocation": {
+            "info": "a",
+            "title": "LNMIIT",
+            "uId": "1",
+            "country": "INDIA",
+            "latitude": "26.937899",
+            "locality": "MAIN GATE NO. 1",
+            "longitude": "75.922485",
+            "zipCode": "302031"
+          },
+          "fare": "25",
+          "interval": {
+            "endTime": "",
+            "startTime": "20"
+          },
+          "startLocation": {
+            "info": "v",
+            "title": "RAJA PARK",
+            "uId": "3",
+            "country": "INDIA",
+            "latitude": "26.896324",
+            "locality": "RAMADA HOTEL",
+            "longitude": "75.828979",
+            "zipCode": "302031"
+          }
+        },
+        "startLocation": {
+          "info": "v",
+          "title": "RAJA PARK",
+          "uId": "3",
+          "country": "INDIA",
+          "latitude": "26.896324",
+          "locality": "RAMADA HOTEL",
+          "longitude": "75.828979",
+          "zipCode": "302031"
+        },
+        "timing": {
+          "endTime": "16:50:00",
+          "startTime": "16:30:00"
+        },
+        "vehicleName": "bus_1"
+      }
+    ]
+  }

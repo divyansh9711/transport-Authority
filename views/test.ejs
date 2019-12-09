@@ -1,0 +1,133 @@
+<% layout('sidebartest.ejs') -%>
+<!-- <div>
+  <span class="circle">LNMIIT</span>
+                <span class="circle">RAJA PARK</span>
+                <span class="circle">AJMERI GATE</span>
+</div> -->
+
+<!-- <button id="toggleButton">Toggle</button> -->
+
+<div>
+<ul class="timeline" id="timeline">
+  <li class="li complete">
+    <div class="timestamp">
+      <span class="author"><strong>LNMIIT</strong></span>
+      <!-- <span class="date">11/15/2014<span> -->
+    </div>
+    <div class="status">
+      <!-- <h4> Shift Created </h4> -->
+    </div>
+  </li>
+  <li class="li complete">
+    <div class="timestamp">
+      <span class="author"><strong>PINK SQUARE</strong></span>
+      <!-- <span class="date">11/15/2014<span> -->
+    </div>
+    <div class="status">
+      <!-- <h4> Email Sent </h4> -->
+    </div>
+  </li>
+  <li class="li complete">
+    <div class="timestamp">
+      <span class="author"><strong>AJMERI GATE</strong></span>
+      <!-- <span class="date">11/15/2014<span> -->
+    </div>
+    <div class="status">
+      <!-- <h4> SIC Approval </h4> -->
+    </div>
+  </li>
+  <!-- <li class="li">
+    <div class="timestamp">
+      <span class="author">PAM Admin</span>
+      <span class="date">TBD<span>
+    </div>
+    <div class="status">
+      <h4> Shift Completed </h4>
+    </div>
+  </li> -->
+  
+</ul>  
+
+</div>
+<div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-12" >
+          <table class="table table-striped" >
+              <thead style="background-color:#7386D5" >
+                <tr>
+                  <th scope="col" style="border-color:white;border-top-left-radius:15px;font-family: 'Times New Roman', Times, serif;font-size:1.1em">#</th>
+                  <th scope="col"  style="border-color:white;border-top-right-radius:15px;font-family: 'Times New Roman', Times, serif;font-size:1.1em"></th>
+                </tr>
+              </thead>
+              <tbody>
+                  
+              <tr>
+                <td><strong style="font-size: 0.9em;word-spacing: 5px;">Route</strong></td>
+                <td id="aa"> <i class="fa fa-bus" style="color:black" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<strong style="font-size: 0.7em;word-spacing: 5px;">
+               LNMIIT --> AJMERI GATE
+                </strong></td>
+              </tr>
+              <tr>
+                <td><strong style="font-size: 0.9em;word-spacing: 5px;">Time</strong></td>
+                  <td id="bb"><i class="fa fa-clock"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="font-size: 0.7em;word-spacing: 5px;">16:15:00</strong></td>
+                </strong></td>
+              </tr>
+              <tr>
+                <td><strong style="font-size: 0.9em;word-spacing: 5px;">DriverName</strong></td>
+                  <td id="cc"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="font-size: 0.7em;word-spacing: 5px;">LAXMAN SINGH</strong></td>
+                </strong></td>
+              </tr>
+              <tr>
+                <td><strong style="font-size: 0.9em;word-spacing: 5px;">Phone No.</strong></td>
+                  <td id="dd"><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="font-size: 0.7em;word-spacing: 5px;">8003666666</strong></td>
+                </strong></td>
+              </tr>
+              <tr>
+                <td><strong style="font-size: 0.9em;word-spacing: 5px;">Fare</strong></td>
+                  <td id="ee"><i class="fa fa-rupee-sign"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="font-size: 0.7em;word-spacing: 5px;">25</strong></td>
+                </strong></td>
+              </tr>
+              </tbody>
+            </table>
+
+
+    </div>
+    <video id="videoPlayer" controls autoplay>
+      <source src="http://localhost:8000/video/<%= busid%>" type="video/mp4">
+    </video> 
+   </div>    
+  
+  <a class="btn btn-warning" href="/profile/">Resolve</a>
+
+</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+</style>
+</head>
+<body>
+
+<p><strong></strong></p>
+
+<form>
+  <textarea>Some text...</textarea>
+</form>
+
+</body>
+</html>
+      
+      
+        

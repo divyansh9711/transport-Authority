@@ -1,0 +1,155 @@
+<% layout('sidebar.ejs') -%>
+ 
+<!-- 
+<head>
+   <title>Try v1.2 Bootstrap Online</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+   <script src="/scripts/jquery.min.js"></script>
+   <script src="/bootstrap/js/bootstrap.min.js"></script>
+</head> -->
+<!-- <body>
+
+<div class = "row">
+   
+   <div class = "col-sm-6 col-md-3">
+      <div class = "thumbnail">
+         <img src = "https://source.unsplash.com/pWkk7iiCoDM/400x300" alt = "Generic placeholder thumbnail">
+      </div>
+      
+      <div class = "caption">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text. Some sample text.</p>
+         
+         <p>
+            <a href = "#" class = "btn btn-primary" role = "button">
+               Button
+            </a> 
+            
+            <a href = "#" class = "btn btn-default" role = "button">
+               Button
+            </a>
+         </p>
+         
+      </div>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <div class = "thumbnail">
+         <img src = "https://source.unsplash.com/pWkk7iiCoDM/400x300" alt = "Generic placeholder thumbnail">
+      </div>
+      
+      <div class = "caption">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text. Some sample text.</p>
+         
+         <p>
+            <a href = "#" class = "btn btn-primary" role = "button">
+               Button
+            </a> 
+            
+            <a href = "#" class = "btn btn-default" role = "button">
+               Button
+            </a>
+         </p>
+         
+      </div>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <div class = "thumbnail">
+         <img src = "https://source.unsplash.com/pWkk7iiCoDM/400x300" alt = "Generic placeholder thumbnail">
+      </div>
+      
+      <div class = "caption">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text. Some sample text.</p>
+         
+         <p>
+            <a href = "#" class = "btn btn-primary" role = "button">
+               Button
+            </a> 
+            
+            <a href = "#" class = "btn btn-default" role =" button">
+               Button
+            </a>
+         </p>
+         
+      </div>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <div class = "thumbnail">
+         <img src = "https://source.unsplash.com/pWkk7iiCoDM/400x300" alt = "Generic placeholder thumbnail">
+      </div>
+      
+      <div class = "caption">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text. Some sample text.</p>
+         
+         <p>
+            <a href = "#" class = "btn btn-primary" role = "button">
+               Button
+            </a> 
+            
+            <a href = "#" class = "btn btn-default" role = "button">
+               Button
+            </a>
+         </p>
+         
+      </div>
+   </div>
+   
+</div>
+
+</body> -->
+
+<body>
+
+<div class="container">
+<ul id="Wrapper">
+    <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Vehicle Gallery</h1>
+    <input type="text" class="form-control form-rounded" name="search" value="" autocomplete="off" id="Myinput" onkeyup="searchIDFunction()" placeholder="BusID">
+    <hr class="mt-2 mb-5">
+  
+    <div class="row text-center text-lg-left">
+        <% for(var i=0;i<= bus_count-1;i++){ %>
+      <div class="col-sm-3 col-md-4 col-6">
+         <li>
+          <a href="/profile/<%= bus_details[i].uId %>"><h5>BusID:<%= bus_details[i].uId %></h5></a>
+        <span class="d-block mb-4 h-20" href="/profile/<%= bus_details[i].uId %>">
+               
+               
+              <!-- <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
+             -->
+             <iframe width="420" height="315"
+						src="https://www.youtube.com/embed/tgbNymZ7vqY"  alt="Snow" style="width:100%;max-width:300px;height: 200px;">
+				</iframe>
+        </span>
+         </li>
+      </div>
+      <%  } %>
+     
+    </div>
+  </ul>
+  </div>
+  <script>
+  function searchIDFunction() {
+   var input, filter, ul, li, a, i;
+   input = document.getElementById('Myinput');
+   filter = input.value;
+   ul = document.getElementById('Wrapper');
+   li = ul.getElementsByTagName('li');
+
+   for(i=0 ; i< li.length; i++){
+       a = li[i].getElementsByTagName('a')[0];
+       if(a.innerHTML.toUpperCase().indexOf(filter) > -1){
+           li[i].style.display = "";
+       }
+
+       else{
+           li[i].style.display = 'none';
+       }
+   }
+}
+</script>
+  </body>

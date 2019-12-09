@@ -1,0 +1,134 @@
+<% layout('sidebar.ejs') -%>
+<!-- <div>
+  <span class="circle">LNMIIT</span>
+                <span class="circle">RAJA PARK</span>
+                <span class="circle">AJMERI GATE</span>
+</div> -->
+
+<!-- <button id="toggleButton">Toggle</button> -->
+
+<div>
+<ul class="timeline" id="timeline">
+  <li class="li complete">
+    <div class="timestamp">
+      <span class="author"><strong><%=  current_bus_details.startLocation.title%></strong></span>
+      <!-- <span class="date">11/15/2014<span> -->
+    </div>
+    <div class="status">
+      <!-- <h4> Shift Created </h4> -->
+    </div>
+  </li>
+  <li class="li complete">
+    <div class="timestamp">
+      <span class="author"><strong>PINK SQUARE</strong></span>
+      <!-- <span class="date">11/15/2014<span> -->
+    </div>
+    <div class="status">
+      <!-- <h4> Email Sent </h4> -->
+    </div>
+  </li>
+  <li class="li complete">
+    <div class="timestamp">
+      <span class="author"><strong><%=  current_bus_details.endLocation.title%></strong></span>
+      <!-- <span class="date">11/15/2014<span> -->
+    </div>
+    <div class="status">
+      <!-- <h4> SIC Approval </h4> -->
+    </div>
+  </li>
+  <!-- <li class="li">
+    <div class="timestamp">
+      <span class="author">PAM Admin</span>
+      <span class="date">TBD<span>
+    </div>
+    <div class="status">
+      <h4> Shift Completed </h4>
+    </div>
+  </li> -->
+  
+</ul>  
+
+</div>
+<div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-12" >
+          <table class="table table-striped" >
+              <thead style="background-color:#720D5D" >
+                <tr>
+                  <th scope="col" style="border-color:white;border-top-left-radius:15px;font-family: 'Times New Roman', Times, serif;font-size:1.1em">#</th>
+                  <th scope="col"  style="border-color:white;border-top-right-radius:15px;font-family: 'Times New Roman', Times, serif;font-size:1.1em"></th>
+                </tr>
+              </thead>
+              <tbody>
+                  
+              <tr>
+                <td><strong style="font-size: 0.9em;word-spacing: 5px;">Route</strong></td>
+                <td id="aa"> <i class="fa fa-bus" style="color:black" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<strong style="font-size: 0.7em;word-spacing: 5px;" id = "routeView">
+               <%=  current_bus_details.route.info.replace("TO","-->") %>
+                </strong></td>
+              </tr>
+              <tr>
+                <td><strong style="font-size: 0.9em;word-spacing: 5px;">Time</strong></td>
+                  <td id="bb"><i class="fa fa-clock"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="font-size: 0.7em;word-spacing: 5px;"id = "timing"><%= current_bus_details.timing.startTime %></strong></td>
+                </strong></td>
+              </tr>
+              <tr>
+                <td><strong style="font-size: 0.9em;word-spacing: 5px;">DriverName</strong></td>
+                  <td id="cc"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="font-size: 0.7em;word-spacing: 5px;" id ="driverView"><%= current_bus_details.driver.firstName %> <%= current_bus_details.driver.lastName %></strong></td>
+                </strong></td>
+              </tr>
+              <tr>
+                <td><strong style="font-size: 0.9em;word-spacing: 5px;">Phone No.</strong></td>
+                  <td id="dd"><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="font-size: 0.7em;word-spacing: 5px;"><%= current_bus_details.driver.userMobile %></strong></td>
+                </strong></td>
+              </tr>
+              <tr>
+                <td><strong style="font-size: 0.9em;word-spacing: 5px;">Fare</strong></td>
+                  <td id="ee"><i class="fa fa-rupee-sign"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="font-size: 0.7em;word-spacing: 5px;"><%= current_bus_details.route.fare %></strong></td>
+                </strong></td>
+              </tr>
+              </tbody>
+            </table>
+
+
+    </div>
+    <video id="videoPlayer" controls autoplay>
+      <source src="http://localhost:8000/video/<%= bid%>" type="video/mp4">
+    </video> 
+  </div>    
+ 
+  <a class="btn btn-warning" href="/profile/<%= bid%>/resolve"> Resolve</a>
+</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+</style>
+</head>
+<body>
+
+<p><strong></strong></p>
+
+<form>
+  <textarea>Some text...</textarea>
+</form>
+
+</body>
+</html>
+
+     
+      
+      
+        

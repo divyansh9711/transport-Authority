@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "539399795758",
+    "firebase_url": "https://transport-managment.firebaseio.com",
+    "project_id": "transport-managment",
+    "storage_bucket": "transport-managment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539399795758:android:2620004bff2c66e7",
+        "android_client_info": {
+          "package_name": "com.example.divyanshsingh.transportationmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539399795758-bu8m9ltauk67m09eq1b5b5apnhhu3o0u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.divyanshsingh.transportationmanagement",
+            "certificate_hash": "029f8171dcaa83702540ca3cc1459aa2db94e5cc"
+          }
+        },
+        {
+          "client_id": "539399795758-9fb1nv9lvtuc7jqf0fji50lv4d9va8vn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5XmFiKG6UJ0K4bwKH5wZE_UPToMEOmo4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539399795758-9fb1nv9lvtuc7jqf0fji50lv4d9va8vn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

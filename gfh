@@ -1,0 +1,35 @@
+<% layout('sidebar.ejs') -%>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12" >
+          <table class="table table-striped" >
+              <thead style="background-color:#7386D5" >
+                <tr>
+                  <th scope="col" style="border-color:white;border-top-left-radius:15px;font-family: 'Times New Roman', Times, serif;font-size:1.1em">S No.</th>
+                  <th scope="col" style="border-color:white;font-family: 'Times New Roman', Times, serif;font-size:1.1em">Route</th>
+                  <th scope="col"  style="border-color:white;border-top-right-radius:15px;font-family: 'Times New Roman', Times, serif;font-size:1.1em">Boarding_Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <% for(var i=0;i<= bus_count-1;i++){ %>
+               <tr>
+                <th scope="row" style="font-size: 0.8em;"><%= i+1 %></th>
+                <td> <i class="fa fa-bus" style="color:black" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<strong style="font-size: 0.7em;word-spacing: 5px;">
+                <a href="/profile/<%=i%>/new"> <%=  current_bus_details[i].route.info.replace("TO","-->") %></a>
+                </strong></td>
+                <td><i class="fa fa-clock"></i>&nbsp;&nbsp;&nbsp;<strong style="font-size: 0.8em;"><%= current_bus_details[i].timing.startTime %></strong></td>
+              </tr>
+              <% } %>
+              
+              </tbody>
+            </table>
+
+
+    </div>
+  </div>    
+
+     
+      
+      
+        
