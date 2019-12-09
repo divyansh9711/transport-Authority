@@ -18,7 +18,7 @@
     "firebase-admin": "^6.5.1",
     "form-data": "^2.3.3",
     "json-data": "0.0.1",
-    "mongoose": "^5.4.4",
+    "mongoose": "^5.7.5",
     "node-fetch": "^2.3.0",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
